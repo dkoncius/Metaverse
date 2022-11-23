@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metaverse</title>
+    <!-- Logo -->
+    <link rel="shortcut icon" href="assets/meta-logo.ico">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <header>
+            <div class="content">
+                <img src="assets/gem-regular.svg" alt="gem">
+                <div class="line"></div>
+                <hr>
+                <div class="intro">
+                    <h1>Metaverse</h1>
+                    <p>Innovation that will shape how we <a href="https://www.codeacademykids.com/">connect</a> in the world an <a href="https://www.codeacademykids.com/">opportunity</a> for everybody.</p>
+                </div>
+                <hr>
+                <div class="line"></div>
+            </div>
+            <nav>
+                <button onclick="showTab('intro')">intro</button>
+                <button onclick="showTab('work')">work</button>
+                <button onclick="showTab('about')">about</button>
+                <button onclick="showTab('contact')">contact</button>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Intro -->
+			<article id="intro" class="tab">
+                <h2 class="major">Intro</h2>
+                <video class="cover" src="assets/tab-1.mp4" muted autoplay loop></video>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsa, eum possimus explicabo repellat impedit eius omnis sapiente? Libero aperiam ut, sint quasi sapiente nesciunt quibusdam fugit voluptas placeat architecto deleniti doloremque quidem vel, eum iure adipisci incidunt. <br><br> Hic nesciunt incidunt commodi delectus nostrum? Voluptatum perspiciatis sequi nobis, voluptates aperiam recusandae omnis ullam, reprehenderit labore tempore et! Tenetur accusantium tempore quibusdam, minima vel, neque ullam magnam cumque at quo corporis. Rerum consequuntur voluptatibus minima eligendi, quibusdam, doloremque quisquam excepturi est quam autem sunt suscipit tempore dolores quas provident! Recusandae, fugiat officiis deleniti quibusdam perferendis maiores! Doloribus obcaecati ipsum dicta maiores?</p>
+                <img class="close" onclick="closeTab(event)" src="assets/xmark-solid.svg" alt="xmark">
+            </article>	
+
+            <!-- Work -->
+			<article id="work" class="tab">
+                <h2 class="major">Work</h2>
+                <img class="cover" src="assets/tab-2.jpg" alt="tab-2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsa, eum possimus explicabo repellat impedit eius omnis sapiente? Libero aperiam ut, sint quasi sapiente nesciunt quibusdam fugit voluptas placeat architecto deleniti doloremque quidem vel, eum iure adipisci incidunt. <br><br> Hic nesciunt incidunt commodi delectus nostrum? Voluptatum perspiciatis sequi nobis, voluptates aperiam recusandae omnis ullam, reprehenderit labore tempore et! Tenetur accusantium tempore quibusdam, minima vel, neque ullam magnam cumque at quo corporis. Rerum consequuntur voluptatibus minima eligendi, quibusdam, doloremque quisquam excepturi est quam autem sunt suscipit tempore dolores quas provident! Recusandae, fugiat officiis deleniti quibusdam perferendis maiores! Doloribus obcaecati ipsum dicta maiores?</p>
+                <img class="close" onclick="closeTab(event)" src="assets/xmark-solid.svg" alt="xmark">
+            </article>	
+
+            <!-- About -->
+			<article id="about" class="tab">
+                <h2 class="major">About</h2>
+                <img class="cover" src="assets/tab-3.jpg" alt="tab-2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsa, eum possimus explicabo repellat impedit eius omnis sapiente? Libero aperiam ut, sint quasi sapiente nesciunt quibusdam fugit voluptas placeat architecto deleniti doloremque quidem vel, eum iure adipisci incidunt. <br><br> Hic nesciunt incidunt commodi delectus nostrum? Voluptatum perspiciatis sequi nobis, voluptates aperiam recusandae omnis ullam, reprehenderit labore tempore et! Tenetur accusantium tempore quibusdam, minima vel, neque ullam magnam cumque at quo corporis. Rerum consequuntur voluptatibus minima eligendi, quibusdam, doloremque quisquam excepturi est quam autem sunt suscipit tempore dolores quas provident! Recusandae, fugiat officiis deleniti quibusdam perferendis maiores! Doloribus obcaecati ipsum dicta maiores?</p>
+                <img class="close" onclick="closeTab(event)" src="assets/xmark-solid.svg" alt="xmark">
+            </article>	
+
+            <!-- Contact -->
+			<article id="contact" class="tab">
+                <h2 class="major">Contact</h2>
+                <img class="cover" src="assets/tab-4.jpg" alt="tab-2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsa, eum possimus explicabo repellat impedit eius omnis sapiente? Libero aperiam ut, sint quasi sapiente nesciunt quibusdam fugit voluptas placeat architecto deleniti doloremque quidem vel, eum iure adipisci incidunt. <br><br> Hic nesciunt incidunt commodi delectus nostrum? Voluptatum perspiciatis sequi nobis, voluptates aperiam recusandae omnis ullam, reprehenderit labore tempore et! Tenetur accusantium tempore quibusdam, minima vel, neque ullam magnam cumque at quo corporis. Rerum consequuntur voluptatibus minima eligendi, quibusdam, doloremque quisquam excepturi est quam autem sunt suscipit tempore dolores quas provident! Recusandae, fugiat officiis deleniti quibusdam perferendis maiores! Doloribus obcaecati ipsum dicta maiores?</p>
+                <img class="close" onclick="closeTab(event)" src="assets/xmark-solid.svg" alt="xmark">
+            </article>	
+        </main>
+        <script src="script.js"></script>            
+</body>
+</html>

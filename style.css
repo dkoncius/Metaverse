@@ -1,0 +1,216 @@
+/* 
+Remtasi: 
+* https://html5up.net/dimension
+* https://about.facebook.com/
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: source sans pro;
+    color: white;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("assets/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 100px;
+    position: relative;
+    z-index: -1;
+}
+
+body:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("assets/bg-overlay.png");
+    z-index: -1;
+}
+
+header {
+    width: 100%;
+}
+
+header .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header .content img {
+    width: 100px;
+    height: 100px;
+    border: 1px solid white;
+    border-radius: 100px;
+    padding: 30px;
+    background-position: cover;
+}
+
+header .content .line {
+    width: 1px;
+    height: 50px;
+    background: white;
+}
+
+header .content hr {
+    outline: none;
+    border: none;
+    height: 1px;
+    width: 100%;
+    background: white;
+}
+
+header .content h1 {
+    font-size: 50px;
+    padding: 30px 0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+header .content p {
+    line-height: 30px;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-bottom: 30px;
+}
+
+header .content p a {
+    border-bottom: 1px dotted white;
+    transition: 0.3s;
+}
+
+header .content p a:hover {
+    color: skyblue;
+    border-color: skyblue;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+header button {
+    background: none;
+    border: 1px solid white;
+    padding: 15px;
+    width: 150px;
+    text-align: center;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+header button:first-of-type {
+    border-radius: 4px 0 0 4px;
+}
+
+header button:last-of-type {
+    border-radius: 0 4px 4px 0;
+}
+
+
+header button:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.215);
+}
+
+.intro {
+    text-align: center;
+    height: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+/* Main */
+main {
+    max-width: 1000px;
+}
+
+main article {
+    display: none;
+    padding: 50px;
+    position: relative;
+    background: #1b1f22d9;
+}
+
+main article h2 {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 30px;
+    border-bottom: 1px solid white;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+main article .cover {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+
+main article p {
+    line-height: 40px;
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+main article .close {
+    width: 30px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    transition: transform 0.3s;
+}
+
+main article .close:hover {
+    cursor: pointer;
+    transform: rotateZ(90deg);
+}
+
+
+@media (max-width: 768px){
+
+    body {
+        padding: 20px;
+    }
+    
+    header .content h1 {
+       font-size: 35px;
+    }
+
+    header .content p {
+        text-align: justify;
+    }
+   nav {
+    flex-wrap: wrap;
+   }
+
+   nav button {
+    width: 100%;
+   }
+
+   main article .close {
+    top: 20px;
+    right: 20px;
+}
+}
